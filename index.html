@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Family Travel Countdown</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="passwordScreen">
+
+    <div class="loginBox">
+
+        <h1>
+            ✈️ Family Travel
+        </h1>
+
+        <h2>
+            Netherlands Edition 🇳🇱
+        </h2>
+
+        <p>
+            Для просмотра страницы введите пароль
+        </p>
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Пароль">
+
+        <button id="loginButton">
+            Войти
+        </button>
+
+        <div id="loginError">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div id="mainPage" class="hidden">
+
+<div class="backgroundOverlay"></div>
+
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+
+<div class="plane">
+✈️
+</div>
+
+<div class="train">
+🚆
+</div>
+
+<div class="stars">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<header>
+
+<div class="title">
+
+Орёл и Решка
+
+</div>
+
+<div class="subtitle">
+
+Путешествие в Нидерланды 🇳🇱
+
+</div>
+
+</header>
+
+
+<section class="countdownCard">
+
+<h2>
+
+До прибытия мамы и сестры
+
+</h2>
+
+<h3>
+
+Amsterdam Schiphol
+
+03.06.2026
+
+22:25
+
+</h3>
+
+<div id="countdown">
+
+<div class="timeBox">
+
+<span id="days">
+
+000
+
+</span>
+
+<label>
+
+Дней
+
+</label>
+
+</div>
+
+<div class="timeBox">
+
+<span id="hours">
+
+00
+
+</span>
+
+<label>
+
+Часов
+
+</label>
+
+</div>
+
+<div class="timeBox">
+
+<span id="minutes">
+
+00
+
+</span>
+
+<label>
+
+Минут
+
+</label>
+
+</div>
+
+<div class="timeBox">
+
+<span id="seconds">
+
+00
+
+</span>
+
+<label>
+
+Секунд
+
+</label>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="travelInfo">
+
+<div class="glassCard">
+
+<h2>
+
+Маршрут
+
+</h2>
+
+<p>
+
+LOT Polish Airlines
+
+→
+
+Amsterdam Schiphol
+
+</p>
+
+</div>
+
+<div class="glassCard">
+
+<h2>
+
+Финальная остановка
+
+</h2>
+
+<p>
+
+Нидерланды 🇳🇱
+
+</p>
+
+</div>
+
+</section>
+
+<div class="glassCard">
+
+<h2>
+
+Пункт назначения
+
+</h2>
+
+<p>
+
+Добро пожаловать в Нидерланды ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footerText">
+
+✈️ Family Trip 2026 • Amsterdam Schiphol • Netherlands 🇳🇱
+
+</div>
+
+</footer>
+
+<div id="arrivalMessage" class="arrivalHidden">
+
+<div class="arrivalCard">
+
+<h1>
+
+🎉 Добро пожаловать! 🎉
+
+</h1>
+
+<h2>
+
+Мама и сестра прибыли!
+
+</h2>
+
+<p>
+
+Желаем прекрасного путешествия
+по Нидерландам 🇳🇱
+
+</p>
+
+<div class="celebrationIcons">
+
+🌷 🚆 ✈️ 🧀 🚲 🇳🇱
+
+</div>
+
+<button id="closeArrival">
+
+Закрыть
+
+</button>
+
+</div>
+
+</div>
+
+<div id="confetti">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
