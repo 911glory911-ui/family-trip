@@ -93,7 +93,7 @@ hours.innerHTML=String(h).padStart(2,"0");
 minutes.innerHTML=String(m).padStart(2,"0");
 seconds.innerHTML=String(s).padStart(2,"0");
 
-  }
+}
 
 function showArrival(){
 
@@ -149,4 +149,76 @@ piece.style.top="-20px";
 
 piece.style.width=(6+Math.random()*10)+"px";
 
-piece.style.height=(8+Math.random
+piece.style.height=(8+Math.random()*14)+"px";
+
+piece.style.borderRadius="2px";
+
+piece.style.background=
+colors[Math.floor(Math.random()*colors.length)];
+
+piece.style.opacity="0.95";
+
+piece.style.transform=
+"rotate("+Math.random()*360+"deg)";
+
+piece.style.transition="none";
+
+container.appendChild(piece);
+
+animatePiece(piece);
+
+}
+
+}
+
+function animatePiece(piece){
+
+const duration=4000+Math.random()*5000;
+
+const endX=(Math.random()*400)-200;
+
+const endY=window.innerHeight+100;
+
+piece.animate(
+
+[
+{
+
+transform:"translate(0,0) rotate(0deg)"
+
+},
+
+{
+
+transform:
+"translate("+endX+"px,"+endY+"px) rotate(720deg)"
+
+}
+
+],
+
+{
+
+duration:duration,
+
+iterations:1,
+
+easing:"ease-in"
+
+}
+
+);
+
+setTimeout(()=>{
+
+piece.remove();
+
+},duration);
+
+}
+
+window.addEventListener("resize",()=>{
+
+});
+
+console.log("Family Travel Countdown loaded.");
